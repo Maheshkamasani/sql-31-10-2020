@@ -1,0 +1,181 @@
+
+C:\Users\c baya reddy>go version
+go version go1.15.3 windows/amd64
+
+C:\Users\c baya reddy>go get -u github.com/go-sql-driver/mysql
+
+C:\Users\c baya reddy>cd Desktop\mysqldatabase
+
+C:\Users\c baya reddy\Desktop\mysqldatabase>go run main.go
+2020/10/31 21:13:27 Server started on: http://localhost:8080
+2020/10/31 21:14:08 http: panic serving [::1]:61965: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 51 [running]:
+net/http.(*conn).serve.func1(0xc00024a000)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x7104a0, 0xc00018e2d0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x7ec5e0, 0xc0001d6000, 0xc000194600)
+        C:/Users/c baya reddy/Desktop/mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x797708, 0x7ec5e0, 0xc0001d6000, 0xc000194600)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9c5540, 0x7ec5e0, 0xc0001d6000, 0xc000194600)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000242000, 0x7ec5e0, 0xc0001d6000, 0xc000194600)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00024a000, 0x7ecd60, 0xc000180400)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:14:08 http: panic serving [::1]:61966: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 52 [running]:
+net/http.(*conn).serve.func1(0xc00024a0a0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x7104a0, 0xc00018e3e0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x7ec5e0, 0xc0002420e0, 0xc000194700)
+        C:/Users/c baya reddy/Desktop/mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x797708, 0x7ec5e0, 0xc0002420e0, 0xc000194700)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9c5540, 0x7ec5e0, 0xc0002420e0, 0xc000194700)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000242000, 0x7ec5e0, 0xc0002420e0, 0xc000194700)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00024a0a0, 0x7ecd60, 0xc0001804c0)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:14:08 http: panic serving [::1]:61969: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 26 [running]:
+net/http.(*conn).serve.func1(0xc0001ce1e0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x7104a0, 0xc00003cec0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x7ec5e0, 0xc0001d60e0, 0xc000214400)
+        C:/Users/c baya reddy/Desktop/mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x797708, 0x7ec5e0, 0xc0001d60e0, 0xc000214400)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9c5540, 0x7ec5e0, 0xc0001d60e0, 0xc000214400)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000242000, 0x7ec5e0, 0xc0001d60e0, 0xc000214400)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001ce1e0, 0x7ecd60, 0xc000200300)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:14:09 http: panic serving [::1]:61971: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 31 [running]:
+net/http.(*conn).serve.func1(0xc0001ce320)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x7104a0, 0xc00020a210)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x7ec5e0, 0xc0001d61c0, 0xc000194800)
+        C:/Users/c baya reddy/Desktop/mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x797708, 0x7ec5e0, 0xc0001d61c0, 0xc000194800)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9c5540, 0x7ec5e0, 0xc0001d61c0, 0xc000194800)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000242000, 0x7ec5e0, 0xc0001d61c0, 0xc000194800)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001ce320, 0x7ecd60, 0xc000180740)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:14:09 http: panic serving [::1]:61972: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 32 [running]:
+net/http.(*conn).serve.func1(0xc0001ce3c0)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x7104a0, 0xc00018e5b0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x7ec5e0, 0xc0002421c0, 0xc000194900)
+        C:/Users/c baya reddy/Desktop/mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x797708, 0x7ec5e0, 0xc0002421c0, 0xc000194900)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9c5540, 0x7ec5e0, 0xc0002421c0, 0xc000194900)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000242000, 0x7ec5e0, 0xc0002421c0, 0xc000194900)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001ce3c0, 0x7ecd60, 0xc0001807c0)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:14:09 http: panic serving [::1]:61975: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 69 [running]:
+net/http.(*conn).serve.func1(0xc0001ce500)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x7104a0, 0xc00020a370)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x7ec5e0, 0xc0000be000, 0xc000088500)
+        C:/Users/c baya reddy/Desktop/mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x797708, 0x7ec5e0, 0xc0000be000, 0xc000088500)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9c5540, 0x7ec5e0, 0xc0000be000, 0xc000088500)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000242000, 0x7ec5e0, 0xc0000be000, 0xc000088500)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0001ce500, 0x7ecd60, 0xc0000941c0)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:14:14 http: panic serving [::1]:61977: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 7 [running]:
+net/http.(*conn).serve.func1(0xc00004eb40)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x7104a0, 0xc00003d010)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x7ec5e0, 0xc00015e000, 0xc000214500)
+        C:/Users/c baya reddy/Desktop/mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x797708, 0x7ec5e0, 0xc00015e000, 0xc000214500)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9c5540, 0x7ec5e0, 0xc00015e000, 0xc000214500)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000242000, 0x7ec5e0, 0xc00015e000, 0xc000214500)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00004eb40, 0x7ecd60, 0xc000200440)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:14:14 http: panic serving [::1]:61978: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 39 [running]:
+net/http.(*conn).serve.func1(0xc0000cc000)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x7104a0, 0xc00003d170)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x7ec5e0, 0xc00015e0e0, 0xc000088600)
+        C:/Users/c baya reddy/Desktop/mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x797708, 0x7ec5e0, 0xc00015e0e0, 0xc000088600)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9c5540, 0x7ec5e0, 0xc00015e0e0, 0xc000088600)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000242000, 0x7ec5e0, 0xc00015e0e0, 0xc000088600)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc0000cc000, 0x7ecd60, 0xc000094340)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+2020/10/31 21:14:14 http: panic serving [::1]:61981: Error 1045: Access denied for user 'root'@'localhost' (using password: YES)
+goroutine 15 [running]:
+net/http.(*conn).serve.func1(0xc00004ed20)
+        c:/go/src/net/http/server.go:1801 +0x147
+panic(0x7104a0, 0xc00018e6c0)
+        c:/go/src/runtime/panic.go:975 +0x499
+main.Index(0x7ec5e0, 0xc0002422a0, 0xc000214600)
+        C:/Users/c baya reddy/Desktop/mysqldatabase/main.go:36 +0x4f4
+net/http.HandlerFunc.ServeHTTP(0x797708, 0x7ec5e0, 0xc0002422a0, 0xc000214600)
+        c:/go/src/net/http/server.go:2042 +0x4b
+net/http.(*ServeMux).ServeHTTP(0x9c5540, 0x7ec5e0, 0xc0002422a0, 0xc000214600)
+        c:/go/src/net/http/server.go:2417 +0x1b7
+net/http.serverHandler.ServeHTTP(0xc000242000, 0x7ec5e0, 0xc0002422a0, 0xc000214600)
+        c:/go/src/net/http/server.go:2843 +0xaa
+net/http.(*conn).serve(0xc00004ed20, 0x7ecd60, 0xc0002004c0)
+        c:/go/src/net/http/server.go:1925 +0x8ad
+created by net/http.(*Server).Serve
+        c:/go/src/net/http/server.go:2969 +0x36d
+exit status 2
+
+C:\Users\c baya reddy\Desktop\mysqldatabase>go run main.go
+2020/10/31 21:17:16 Server started on: http://localhost:8080
+2020/11/01 00:28:51 INSERT: Name: MAHESWAR REDDY KAMASANI | City: Cuddapah
+2020/11/01 00:30:10 INSERT: Name: Gangi Reddy | City: Galiveedu
+2020/11/01 00:30:35 INSERT: Name: Srikanth Reddy | City: Vempalli
+2020/11/01 00:30:56 INSERT: Name: Anandh Reddy | City: Chittor
+2020/11/01 00:33:17 INSERT: Name: Harinadha Reddy | City: Chinnamandem

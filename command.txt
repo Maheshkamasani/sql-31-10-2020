@@ -1,0 +1,72 @@
+mysql: [Warning] C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe: ignoring option '--no-beep' due to invalid value ''.
+Enter password: **************
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 118
+Server version: 8.0.22 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> CREATE DATABASE db_goblog
+    -> ;
+Query OK, 1 row affected (0.04 sec)
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| db_goblog          |
+| db_mahesh          |
+| demo               |
+| employee           |
+| information_schema |
+| mahesh             |
+| mysql              |
+| new_schema         |
+| performance_schema |
+| sakila             |
+| student            |
+| sys                |
+| world              |
++--------------------+
+13 rows in set (0.03 sec)
+
+mysql> CREATE DATABASE goblog
+    -> ;
+Query OK, 1 row affected (0.01 sec)
+
+mysql> use goblog
+Database changed
+mysql> DROP TABLE IF EXISTS `employee`;
+Query OK, 0 rows affected, 1 warning (0.04 sec)
+
+mysql> CREATE TABLE `employee` (
+    ->   `id` int(6) unsigned NOT NULL AUTO_INCREMENT,
+    ->   `name` varchar(30) NOT NULL,
+    ->   `city` varchar(30) NOT NULL,
+    ->   PRIMARY KEY (`id`)
+    -> ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1;
+Query OK, 0 rows affected, 1 warning (0.30 sec)
+
+mysql> show employee
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'employee' at line 1
+mysql> open employee;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'open employee' at line 1
+mysql> SHOW TABLES
+    -> show tables;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show tables' at line 2
+mysql> show tables;
++------------------+
+| Tables_in_goblog |
++------------------+
+| employee         |
++------------------+
+1 row in set (0.01 sec)
+
+mysql>
